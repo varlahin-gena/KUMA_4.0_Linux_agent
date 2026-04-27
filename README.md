@@ -36,8 +36,8 @@ User=kuma
 Group=kuma  
 
 ExecStartPre=+-chown kuma:kuma /opt/kaspersky/kuma/agent  
-ExecStartPre=+-chown -R kuma:kuma /opt/kaspersky/kuma/agent/<ID>  
-ExecStart=/opt/kaspersky/kuma/agent_kuma agent --core https://FQDN.domain.local:7210 --id <ID> --wd /opt/kaspersky/kuma/agent/<ID>/  
+ExecStartPre=+-chown -R kuma:kuma /opt/kaspersky/kuma/agent/ID   
+ExecStart=/opt/kaspersky/kuma/agent_kuma agent --core https://FQDN.domain.local:7210 --id <ID> --wd /opt/kaspersky/kuma/agent/ID/  
 
 LimitFSIZE=infinity  
 LimitCPU=infinity  
